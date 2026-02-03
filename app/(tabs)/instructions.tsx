@@ -1,9 +1,9 @@
-import React from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Linking } from 'react-native';
-import { useRouter } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
-import { useTheme } from '@/contexts/ThemeContext';
 import { getThemedColors } from '@/constants/colors';
+import { useTheme } from '@/contexts/ThemeContext';
+import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
+import React from 'react';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function InstructionsScreen() {
   const router = useRouter();
@@ -160,7 +160,9 @@ export default function InstructionsScreen() {
 
         <View style={styles.footer}>
           <Text style={[styles.footerText, { color: colors.textLight }]}>
-            VNeST TerapiaApp - Versio 1.0
+            VNeST-terapiasovellus - Versio 1.0
+            Tämän version lähdekoodi on saatavilla osoitteessa: https://github.com/Hakalath/vnest
+            Alkuperäinen repositorio: https://github.com/varress/vnest-monorepo
           </Text>
         </View>
       </ScrollView >
